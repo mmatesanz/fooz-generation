@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FooZ Generation — Desarrollamos alimentos innovadores y ecológicos que conectan con las personas y responden a los nuevos estilos de vida. Empresa Emergente certificada por ENISA.">
+  <title>¡Saborea la ola buena! — FooZ Generation</title>
+  <meta property="og:title" content="¡Saborea la ola buena! — FooZ Generation">
+  <meta property="og:description" content="Alimentos innovadores y ecológicos que conectan con las personas. Empresa Emergente certificada por ENISA.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="¡Saborea la ola buena! — FooZ Generation">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ================================================
+       NAV
+       ================================================ -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#hero" aria-label="FooZ Generation — inicio">
+        <img
+          src="assets/logos/logo-fooz-generation.png"
+          alt="FooZ Generation"
+          class="nav__logo-img"
+          width="130"
+          height="53"
+        >
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links" role="list">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#gamas">Gamas</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contacto" class="btn btn--accent nav__cta" aria-label="Ir a contacto">Hablemos</a>
+      <a href="https://www.linkedin.com/company/foozgeneration" target="_blank" rel="noopener noreferrer" class="nav__linkedin" aria-label="Seguir FooZ Generation en LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="36" height="36"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#gamas">Gamas</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto-form" class="btn btn--accent">Hablemos</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ================================================
+         HERO
+         ================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-headline">
+
+      <!-- Generative SVG background — azul marca con acentos magenta -->
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/images/hero-bg-surfer.png" alt="" loading="eager">
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow eyebrow fade-in">Foodtech · Innovación Alimentaria</p>
+        <h1 class="hero__headline fade-in" id="hero-headline" style="transition-delay:80ms">
+          ¡Saborea<br>la ola buena!
+        </h1>
+        <p class="hero__sub fade-in" style="transition-delay:160ms">
+          Desarrollamos alimentos innovadores y ecológicos que conectan con las personas y responden a los nuevos estilos de vida.
+        </p>
+        <div class="hero__actions fade-in" style="transition-delay:240ms">
+          <a href="#gamas" class="btn btn--accent">Ver nuestras gamas</a>
+          <a href="#contacto" class="btn btn--outline-light">Hablemos</a>
+        </div>
+        <div class="hero__seals fade-in" style="transition-delay:320ms" aria-label="Sellos de calidad">
+          <img src="assets/images/sello-pyme-innovadora.png" alt="PYME Innovadora" loading="lazy">
+          <img src="assets/images/sello-enisa.png" alt="Empresa Emergente ENISA" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Barra inferior: credenciales -->
+      <div class="hero__credential" aria-label="Credenciales de FooZ Generation">
+        <div class="hero__credential-inner">
+          <div class="hero__credential-item">
+            <span class="hero__credential-dot" aria-hidden="true"></span>
+            Empresa Emergente ENISA
+          </div>
+          <div class="hero__credential-item">
+            <span class="hero__credential-dot" aria-hidden="true"></span>
+            Proyecto SOSTALPACK — CDTI / NextGenerationEU
+          </div>
+          <div class="hero__credential-item">
+            <span class="hero__credential-dot" aria-hidden="true"></span>
+            7+ años de I+D alimentario
+          </div>
+          <div class="hero__credential-item">
+            <span class="hero__credential-dot" aria-hidden="true"></span>
+            25+ formulaciones ecológicas
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         ABOUT
+         ================================================ -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__two-col">
+
+          <!-- Columna texto -->
+          <div class="fade-in">
+            <span class="eyebrow" style="color:var(--color-accent); display:block; margin-bottom:var(--sp-6)">Alimentación para la vida actual</span>
+            <h2 class="about__intro" id="about-heading" style="font-size:clamp(var(--text-xl),3vw,var(--text-3xl)); color:var(--color-text-heading);">
+              Elaboramos productos con alto valor añadido adaptados a los nuevos estilos de vida de las personas.
+            </h2>
+            <div style="margin-top:var(--sp-8);">
+              <p style="font-size:var(--text-md); color:var(--color-text-secondary); margin-bottom:var(--sp-5);">
+                Nuestros productos están ideados para los diferentes y nuevos estilos de vida de las personas: desde los seniors que buscan soluciones de alta calidad y fácil consumo, hasta los deportistas que apuestan por la comida real, pasando por los bebés y las familias que exigen lo mejor desde el primer día.
+              </p>
+              <p style="font-size:var(--text-md); color:var(--color-text-secondary); margin-bottom:0;">
+                Todo y siempre con materias primas <strong style="color:var(--color-text-heading);">ecológicas de kilómetro cero</strong> y un compromiso firme con los criterios <strong style="color:var(--color-text-heading);">ESG</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna imagen producto -->
+          <div class="about__image-col fade-in" style="transition-delay:120ms">
+            <div class="about__image-wrap">
+              <img
+                src="assets/images/producto-about.png"
+                alt="Producto FooZ Generation"
+                loading="lazy"
+              >
+              <div class="about__image-overlay">
+                <p><strong>Producción end-to-end.</strong> Desde la fórmula hasta el envase, garantizando calidad y sostenibilidad en cada lote.</p>
+              </div>
+            </div>
+            <div class="about__badge">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.4L8 12L3.6 14.4L4.5 9.6L1 6.2L5.8 5.5L8 1Z" stroke="var(--color-accent)" stroke-width="1.2" fill="none"/>
+              </svg>
+              <span class="about__badge-text">Empresa Emergente certificada por ENISA</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tags — ancho completo bajo las dos columnas -->
+        <div class="about__tags fade-in" aria-label="Áreas de enfoque">
+          <span class="tag">Ecológico</span>
+          <span class="tag">Kilómetro cero</span>
+          <span class="tag">ESG</span>
+          <span class="tag">Generación Z</span>
+          <span class="tag">Seniors</span>
+          <span class="tag">Deportistas</span>
+          <span class="tag">Bebés</span>
+          <span class="tag">I+D+i</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         STAT STRIP
+         ================================================ -->
+    <div class="strip" aria-label="Datos clave" role="region">
+      <div class="strip__inner">
+        <div class="stat fade-in">
+          <span class="stat__value" data-count="7" data-suffix="+">7+</span>
+          <span class="stat__label">Años de I+D alimentario</span>
+        </div>
+        <div class="stat fade-in" style="transition-delay:80ms">
+          <span class="stat__value" data-count="25" data-suffix="+">25+</span>
+          <span class="stat__label">Formulaciones ecológicas</span>
+        </div>
+        <div class="stat fade-in" style="transition-delay:160ms">
+          <span class="stat__value" data-count="4">4</span>
+          <span class="stat__label">Gamas especializadas</span>
+        </div>
+        <div class="stat fade-in" style="transition-delay:240ms">
+          <span class="stat__value">ENISA</span>
+          <span class="stat__label">Empresa Emergente</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+         GAMAS — carrusel scroll lateral
+         ================================================ -->
+    <section id="gamas" aria-labelledby="gamas-heading">
+
+      <div class="gamas-sticky-wrapper" id="gamas-sticky-wrapper">
+        <div class="gamas-sticky">
+
+          <div class="gamas-header fade-in">
+            <div class="container">
+              <span class="eyebrow" style="color:var(--color-accent)">Nuestros productos</span>
+              <h2 id="gamas-heading" style="color:var(--color-text-heading); font-size:var(--text-xl); font-weight:var(--fw-medium)">Cuatro líneas de alimentos innovadores para distintos estilos de vida.</h2>
+
+              <div class="gamas-progress" aria-label="Gama activa">
+                <span class="gamas-progress__item is-active" data-index="0">
+                  <span class="gamas-progress__step">01</span>
+                  <span class="gamas-progress__label">Senior</span>
+                </span>
+                <span class="gamas-progress__item" data-index="1">
+                  <span class="gamas-progress__step">02</span>
+                  <span class="gamas-progress__label">Sport</span>
+                </span>
+                <span class="gamas-progress__item" data-index="2">
+                  <span class="gamas-progress__step">03</span>
+                  <span class="gamas-progress__label">Baby</span>
+                </span>
+                <span class="gamas-progress__item" data-index="3">
+                  <span class="gamas-progress__step">04</span>
+                  <span class="gamas-progress__label">I+D+i</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gamas-track" id="gamas-track" role="list">
+
+            <!-- Slide 01: SENIOR -->
+            <article class="gama-slide gama-slide--01 is-active" role="listitem" aria-label="Gama Senior">
+              <div class="gama-slide__text">
+                <div class="gama-slide__bg-num" aria-hidden="true">01</div>
+                <div class="gama-slide__eyebrow">
+                  <span class="gama-slide__dot" aria-hidden="true"></span>
+                  <span>Gama Senior</span>
+                </div>
+                <h3>Soluciones diseñadas para vivir bien después de los 65.</h3>
+                <p>Alimentos de alta calidad y fácil consumo, pensados para las necesidades nutricionales y funcionales de las personas mayores. Sabor, textura y nutrición sin compromisos.</p>
+                <a href="#contacto" class="gama-slide__cta" aria-label="Más información sobre la Gama Senior">Conocer esta gama</a>
+              </div>
+              <div class="gama-slide__visual">
+                <img
+                  src="assets/gamas/senior-opacidad.png"
+                  alt="Productos de la Gama Senior FooZ Generation — alimentación de alta calidad para personas mayores"
+                  class="gama-slide__img"
+                  loading="eager"
+                  width="600"
+                  height="540"
+                >
+              </div>
+            </article>
+
+            <!-- Slide 02: SPORT -->
+            <article class="gama-slide gama-slide--02" role="listitem" aria-label="Gama Sport">
+              <div class="gama-slide__text">
+                <div class="gama-slide__bg-num" aria-hidden="true">02</div>
+                <div class="gama-slide__eyebrow">
+                  <span class="gama-slide__dot" aria-hidden="true"></span>
+                  <span>Gama Sport</span>
+                </div>
+                <h3>Alimentación deportiva basada en comida real.</h3>
+                <p>Alimentos para antes y después del entrenamiento, formulados con ingredientes naturales y ecológicos. Sin artificios: solo lo que el deportista necesita para rendir y recuperarse.</p>
+                <a href="#contacto" class="gama-slide__cta" aria-label="Más información sobre la Gama Sport">Conocer esta gama</a>
+              </div>
+              <div class="gama-slide__visual">
+                <img
+                  src="assets/gamas/sport-opacidad.png"
+                  alt="Productos de la Gama Sport FooZ Generation — alimentación deportiva ecológica basada en comida real"
+                  class="gama-slide__img"
+                  loading="lazy"
+                  width="600"
+                  height="540"
+                >
+              </div>
+            </article>
+
+            <!-- Slide 03: BABY -->
+            <article class="gama-slide gama-slide--03" role="listitem" aria-label="Gama Baby">
+              <div class="gama-slide__text">
+                <div class="gama-slide__bg-num" aria-hidden="true">03</div>
+                <div class="gama-slide__eyebrow">
+                  <span class="gama-slide__dot" aria-hidden="true"></span>
+                  <span>Gama Baby</span>
+                </div>
+                <h3>Más de 25 formulaciones infantiles ecológicas desarrolladas.</h3>
+                <p>Alimentación infantil diseñada desde el rigor nutricional y la máxima seguridad. Ingredientes ecológicos de kilómetro cero, formulaciones adaptadas a cada etapa del desarrollo.</p>
+                <a href="#contacto" class="gama-slide__cta" aria-label="Más información sobre la Gama Baby">Conocer esta gama</a>
+              </div>
+              <div class="gama-slide__visual">
+                <img
+                  src="assets/gamas/baby-opacidad.png"
+                  alt="Productos de la Gama Baby FooZ Generation — alimentación infantil ecológica de kilómetro cero"
+                  class="gama-slide__img"
+                  loading="lazy"
+                  width="600"
+                  height="540"
+                >
+              </div>
+            </article>
+
+            <!-- Slide 04: I+D+i -->
+            <article class="gama-slide gama-slide--04" role="listitem" aria-label="Gama I+D+i">
+              <div class="gama-slide__text">
+                <div class="gama-slide__bg-num" aria-hidden="true">04</div>
+                <div class="gama-slide__eyebrow">
+                  <span class="gama-slide__dot" aria-hidden="true"></span>
+                  <span>Gama I+D+i</span>
+                </div>
+                <h3>Más de 7 años desarrollando productos alimentarios diferenciales.</h3>
+                <p>Proyectos alimentarios end-to-end: desde la conceptualización hasta el control de calidad y la comercialización. Innovación, ciencia y territorio en cada formulación.</p>
+                <a href="#contacto" class="gama-slide__cta" aria-label="Más información sobre la Gama I+D+i">Conocer esta gama</a>
+              </div>
+              <div class="gama-slide__visual">
+                <img
+                  src="assets/gamas/idi-opacidad.png"
+                  alt="Proyectos de la Gama I+D+i FooZ Generation — investigación, desarrollo e innovación alimentaria"
+                  class="gama-slide__img"
+                  loading="lazy"
+                  width="600"
+                  height="540"
+                >
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================
+         PROCESO — dark azul marca con iconos reales
+         ================================================ -->
+    <section class="section" id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+        <div class="section-header--centered fade-in">
+          <span class="eyebrow">De principio a fin</span>
+          <h2 id="proceso-heading">Cómo desarrollamos tus productos</h2>
+          <p>Proyectos alimentarios end-to-end: desde la idea hasta el mercado.</p>
+        </div>
+        <div class="proceso__grid">
+
+          <div class="paso fade-in">
+            <div class="paso__icon">
+              <img src="assets/icons/icono-cerebro-original.png" alt="" aria-hidden="true" width="52" height="52">
+            </div>
+            <span class="paso__num-label">01</span>
+            <h4>Conceptualización</h4>
+            <p>Ideamos y formalizamos el concepto de producto adaptado a tu público objetivo y a las tendencias del mercado.</p>
+          </div>
+
+          <div class="paso fade-in" style="transition-delay:80ms">
+            <div class="paso__icon">
+              <img src="assets/icono-proceso-ingenieria.svg" alt="" aria-hidden="true" width="52" height="52">
+            </div>
+            <span class="paso__num-label">02</span>
+            <h4>Ingeniería de producto</h4>
+            <p>Desarrollamos la formulación técnica con ingredientes ecológicos que cumplen los requisitos nutricionales y de proceso.</p>
+          </div>
+
+          <div class="paso fade-in" style="transition-delay:160ms">
+            <div class="paso__icon">
+              <img src="assets/icono-proceso-viabilidad.svg" alt="" aria-hidden="true" width="52" height="52">
+            </div>
+            <span class="paso__num-label">03</span>
+            <h4>Viabilidad y producción</h4>
+            <p>Validamos la viabilidad económica y coordinamos la producción para garantizar escalabilidad y rentabilidad.</p>
+          </div>
+
+          <div class="paso fade-in" style="transition-delay:240ms">
+            <div class="paso__icon">
+              <img src="assets/icono-proceso-calidad.svg" alt="" aria-hidden="true" width="52" height="52">
+            </div>
+            <span class="paso__num-label">04</span>
+            <h4>Calidad y comercial</h4>
+            <p>Aplicamos controles de calidad rigurosos y acompañamos la puesta en mercado del producto.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         PROYECTOS Y RECONOCIMIENTOS
+         ================================================ -->
+    <section id="proyectos" aria-labelledby="proyectos-heading">
+      <div class="container">
+        <div class="section-header--centered fade-in" style="margin-bottom:var(--sp-10);">
+          <span class="eyebrow">Innovación en acción</span>
+          <h2 id="proyectos-heading">Lo que genera FooZ</h2>
+        </div>
+        <div class="proyectos__grid fade-in" style="transition-delay:80ms">
+
+          <div class="proyecto-card">
+            <div class="proyecto-card__visual" aria-hidden="true">
+              <img src="assets/images/producto-fabrica.png" alt="" loading="lazy">
+            </div>
+            <span class="proyecto-card__eyebrow eyebrow">Proyecto I+D — CDTI / NextGenerationEU</span>
+            <h3>SOSTALPACK</h3>
+            <p>
+              Investigación en la industria alimentaria para el desarrollo de envasados sostenibles y tecnologías de procesado eficientes. FooZ Generation ha contribuido con su conocimiento en soluciones alimentarias aplicadas a nuevos formatos y procesos industriales.
+            </p>
+            <p style="margin-top:var(--sp-3); font-size:var(--text-xs); color:rgba(255,255,255,0.35);">
+              Expediente MIG-20241158 · 09/09/2024 – 31/12/2025
+            </p>
+            <a href="proyectos.html" class="proyecto-card__link" aria-label="Ver proyecto SOSTALPACK">
+              Ver proyecto
+            </a>
+          </div>
+
+          <div class="proyecto-card">
+            <div class="proyecto-card__visual proyecto-card__visual--enisa" aria-hidden="true">
+              <img src="assets/images/sello-enisa.png" alt="">
+            </div>
+            <span class="proyecto-card__eyebrow eyebrow" style="color:var(--gama-02)">Reconocimiento oficial</span>
+            <h3>Empresa Emergente ENISA</h3>
+            <p>
+              FooZ Generation certificada como empresa emergente por ENISA. Un reconocimiento que acredita nuestro carácter tecnológico y diferencial, así como nuestro compromiso con la innovación en alimentación.
+            </p>
+            <a href="https://www.linkedin.com/company/foozgeneration" target="_blank" rel="noopener noreferrer" class="proyecto-card__link" aria-label="Ver en LinkedIn">
+              Ver en LinkedIn
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CONTACTO
+         ================================================ -->
+    <section class="section" id="contacto" aria-labelledby="contacto-heading">
+      <div class="container">
+        <div class="contacto__inner">
+
+          <div class="contacto__copy fade-in">
+            <span class="eyebrow" style="color:var(--color-accent); display:block; margin-bottom:var(--sp-5)">¿Quieres saber más?</span>
+            <h2 id="contacto-heading">Hablemos de lo que generamos juntos.</h2>
+            <p>¿Tienes un proyecto alimentario? Cuéntanos qué necesitas. Desarrollamos soluciones innovadoras y ecológicas desde cero, adaptadas a tu público objetivo.</p>
+            <div class="contacto__links">
+              <a href="mailto:info@foozgeneration.com" class="contacto__link" aria-label="Enviar email a FooZ Generation">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M22 7L12 13 2 7"/>
+                </svg>
+                info@foozgeneration.com
+              </a>
+              <a href="https://www.linkedin.com/company/foozgeneration" target="_blank" rel="noopener noreferrer" class="contacto__link" aria-label="FooZ Generation en LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+                linkedin.com/company/foozgeneration
+              </a>
+            </div>
+          </div>
+
+          <div class="fade-in" style="transition-delay:100ms">
+            <form class="form" id="contacto-form" novalidate aria-label="Formulario de contacto">
+              <div class="form__group">
+                <label class="form__label" for="form-nombre">Nombre</label>
+                <input class="form__input" id="form-nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required aria-required="true">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-email">Email</label>
+                <input class="form__input" id="form-email" name="email" type="email" placeholder="tu@empresa.com" autocomplete="email" required aria-required="true">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-empresa">Empresa u organización</label>
+                <input class="form__input" id="form-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" autocomplete="organization">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-gama">¿En qué gama estás interesado?</label>
+                <select class="form__select" id="form-gama" name="gama">
+                  <option value="" disabled selected>Elige una opción</option>
+                  <option value="senior">Gama Senior</option>
+                  <option value="sport">Gama Sport</option>
+                  <option value="baby">Gama Baby</option>
+                  <option value="idi">Gama I+D+i</option>
+                  <option value="proyecto">Proyecto personalizado</option>
+                  <option value="otro">Otro / Aún no lo sé</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-mensaje">Cuéntanos tu proyecto</label>
+                <textarea class="form__textarea" id="form-mensaje" name="mensaje" placeholder="¿Qué producto quieres desarrollar? ¿Para qué público?" rows="4"></textarea>
+                <p class="form__note">Formulario placeholder visual — requiere integración backend antes de publicar.</p>
+              </div>
+              <button type="submit" class="btn btn--accent form__submit">Enviar mensaje</button>
+              <p class="form__disclaimer">Al enviar, aceptas nuestra <a href="#" style="text-decoration:underline">política de privacidad</a>.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <a href="#hero" aria-label="FooZ Generation — inicio">
+            <img src="assets/logos/logo-fooz-generation-transparent.png" alt="FooZ Generation" class="footer__logo-img" width="130" height="53">
+          </a>
+          <p class="footer__tagline">Alimentos innovadores y ecológicos que conectan con las personas.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Gamas de producto">
+          <h5>Gamas</h5>
+          <ul role="list">
+            <li><a href="#gamas">Senior</a></li>
+            <li><a href="#gamas">Sport</a></li>
+            <li><a href="#gamas">Baby</a></li>
+            <li><a href="#gamas">I+D+i</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h5>Empresa</h5>
+          <ul role="list">
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Contacto">
+          <h5>Contacto</h5>
+          <ul role="list">
+            <li><a href="mailto:info@foozgeneration.com">info@foozgeneration.com</a></li>
+            <li><a href="https://www.linkedin.com/company/foozgeneration" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 FooZgeneration. Todos los derechos reservados.</span>
+        <a href="https://www.linkedin.com/company/foozgeneration" target="_blank" rel="noopener noreferrer" class="footer__linkedin" aria-label="Seguir FooZ Generation en LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Seguir en LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

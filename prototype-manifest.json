@@ -1,0 +1,886 @@
+{
+  "schemaVersion": "1.0",
+  "projectSlug": "fooz-generation",
+  "projectName": "FooZ Generation",
+  "generatedAt": "2026-06-05",
+  "prototypeVersion": "0.5.0",
+  "status": "PROTOTYPE_BUILD",
+  "description": "Prototipo estático v0.5. Imágenes reales de producto (_Opacidad.png) integradas en la sección de gamas: Senior, Sport, Baby, I+D+i. Superpuestas sobre el fondo SVG geométrico de cada gama con object-fit:contain y drop-shadow. Efectos hover mejorados con translateY. Responsive mantenido.",
+
+  "pages": [
+    {
+      "id": "page-home",
+      "name": "Home",
+      "path": "index.html",
+      "sections": [
+        "section-nav",
+        "section-hero",
+        "section-about",
+        "section-strip-stats",
+        "section-gamas",
+        "section-proceso",
+        "section-strip-proyectos",
+        "section-contacto",
+        "section-footer"
+      ]
+    }
+  ],
+
+  "components": [
+    {
+      "id": "section-nav",
+      "name": "Navegación principal",
+      "type": "nav",
+      "selector": "#nav",
+      "behavior": "sticky-transparent-to-dark on scroll",
+      "editableContent": ["logo-text", "nav-links", "nav-cta-label"],
+      "notes": "Enlace a /proyectos/ activo apuntando al site real."
+    },
+    {
+      "id": "section-hero",
+      "name": "Hero oscuro con SVG generativo",
+      "type": "hero",
+      "selector": "#hero",
+      "notes": "Fondo dark. Concepto aprobado: 'FooZ genera lo que viene.' Eyebrow con claim ENISA."
+    },
+    {
+      "id": "section-about",
+      "name": "Alimentación para la vida actual",
+      "type": "editorial-split",
+      "selector": "#about",
+      "notes": "Contenido real del site. Badge ENISA inline. Tags de audiencias reales."
+    },
+    {
+      "id": "section-strip-stats",
+      "name": "Strip de datos clave",
+      "type": "stat-strip",
+      "selector": ".strip:first-of-type",
+      "notes": "Cifras reales del cliente: 7+ años, 25+ formulaciones, 4 gamas, ENISA."
+    },
+    {
+      "id": "section-gamas",
+      "name": "Gamas de generación",
+      "type": "alternating-editorial",
+      "selector": "#gamas",
+      "notes": "4 gamas reales: SENIOR, SPORT, BABY, I+D+i. Layout editorial alternante. SVGs generativos por gama con paleta propia."
+    },
+    {
+      "id": "section-proceso",
+      "name": "Proceso end-to-end",
+      "type": "steps-row",
+      "selector": "#proceso",
+      "notes": "4 fases reales del cliente: Conceptualización, Ingeniería, Viabilidad/Producción, Calidad/Comercial."
+    },
+    {
+      "id": "section-strip-proyectos",
+      "name": "Proyectos y reconocimientos",
+      "type": "dark-strip-cards",
+      "selector": ".strip:last-of-type",
+      "notes": "Dos cards: SOSTALPACK (proyecto CDTI/NextGenerationEU) + Certificación ENISA. Links al site real y LinkedIn."
+    },
+    {
+      "id": "section-contacto",
+      "name": "Contacto con formulario",
+      "type": "contact-split",
+      "selector": "#contacto",
+      "notes": "Email real: info@foozgeneration.com. LinkedIn real: linkedin.com/company/foozgeneration. Formulario con opciones de gamas reales."
+    },
+    {
+      "id": "section-footer",
+      "name": "Footer oscuro",
+      "type": "footer",
+      "selector": ".footer",
+      "notes": "Tagline real. Links a /proyectos/. Copyright 2026 real. LinkedIn URL real."
+    }
+  ],
+
+  "editableContent": [
+    {
+      "id": "ec-meta-description",
+      "component": "page-home",
+      "selector": "meta[name='description']",
+      "type": "text",
+      "value": "FooZ Generation — Desarrollamos alimentos innovadores y ecológicos que conectan con las personas y responden a los nuevos estilos de vida. Empresa Emergente certificada por ENISA.",
+      "status": "real-content"
+    },
+    {
+      "id": "ec-hero-eyebrow",
+      "component": "section-hero",
+      "selector": ".hero__eyebrow",
+      "type": "text",
+      "value": "Foodtech · Innovación Alimentaria · Empresa Emergente ENISA",
+      "status": "real-content"
+    },
+    {
+      "id": "ec-hero-headline",
+      "component": "section-hero",
+      "selector": ".hero__headline",
+      "type": "html",
+      "value": "FooZ genera lo que viene.",
+      "status": "approved-concept"
+    },
+    {
+      "id": "ec-hero-sub",
+      "component": "section-hero",
+      "selector": ".hero__sub",
+      "type": "text",
+      "value": "Desarrollamos alimentos innovadores y ecológicos que conectan con las personas y responden a los nuevos estilos de vida.",
+      "status": "real-content",
+      "source": "foozgeneration.com — hero"
+    },
+    {
+      "id": "ec-about-intro",
+      "component": "section-about",
+      "selector": ".about__intro",
+      "type": "text",
+      "value": "Elaboramos productos con alto valor añadido que responden a distintos momentos de uso y se adaptan a los nuevos estilos de vida.",
+      "status": "real-content",
+      "source": "foozgeneration.com — about section"
+    },
+    {
+      "id": "ec-about-body",
+      "component": "section-about",
+      "selector": ".about__detail p",
+      "type": "text",
+      "value": "Basado en contenido real del site. Ajustado editorialmente para mantener dirección creativa.",
+      "status": "real-content-adapted"
+    },
+    {
+      "id": "ec-about-tags",
+      "component": "section-about",
+      "selector": ".about__tags",
+      "type": "list",
+      "value": ["Ecológico", "Kilómetro cero", "ESG", "Generación Z", "Seniors", "Deportistas", "Bebés", "I+D+i"],
+      "status": "real-content"
+    },
+    {
+      "id": "ec-stats",
+      "component": "section-strip-stats",
+      "selector": ".strip__inner",
+      "type": "structured",
+      "value": [
+        {"value": "7+", "label": "Años de I+D alimentario"},
+        {"value": "25+", "label": "Formulaciones ecológicas"},
+        {"value": "4", "label": "Gamas especializadas"},
+        {"value": "ENISA", "label": "Empresa Emergente certificada"}
+      ],
+      "status": "real-content",
+      "source": "foozgeneration.com — gama Baby (25+), gama I+D+i (7+), ENISA certification"
+    },
+    {
+      "id": "ec-gama-senior",
+      "component": "section-gamas",
+      "selector": ".gama--01",
+      "type": "structured",
+      "value": {
+        "number": "01",
+        "name": "Gama Senior",
+        "headline": "Soluciones diseñadas para vivir bien después de los 65.",
+        "description": "Alimentos de alta calidad y fácil consumo, pensados para las necesidades nutricionales de las personas mayores.",
+        "color": "#D4614A"
+      },
+      "status": "real-content",
+      "source": "foozgeneration.com — gama SENIOR"
+    },
+    {
+      "id": "ec-gama-sport",
+      "component": "section-gamas",
+      "selector": ".gama--02",
+      "type": "structured",
+      "value": {
+        "number": "02",
+        "name": "Gama Sport",
+        "headline": "Alimentación deportiva basada en comida real.",
+        "description": "Alimentos para antes y después del entrenamiento, con ingredientes naturales y ecológicos.",
+        "color": "#2EAF74"
+      },
+      "status": "real-content",
+      "source": "foozgeneration.com — gama SPORT"
+    },
+    {
+      "id": "ec-gama-baby",
+      "component": "section-gamas",
+      "selector": ".gama--03",
+      "type": "structured",
+      "value": {
+        "number": "03",
+        "name": "Gama Baby",
+        "headline": "Más de 25 formulaciones infantiles ecológicas desarrolladas.",
+        "description": "Alimentación infantil ecológica de kilómetro cero, adaptada a cada etapa del desarrollo.",
+        "color": "#E8960A"
+      },
+      "status": "real-content",
+      "source": "foozgeneration.com — gama BABY"
+    },
+    {
+      "id": "ec-gama-idi",
+      "component": "section-gamas",
+      "selector": ".gama--04",
+      "type": "structured",
+      "value": {
+        "number": "04",
+        "name": "Gama I+D+i",
+        "headline": "Más de 7 años desarrollando productos alimentarios diferenciales.",
+        "description": "Proyectos alimentarios end-to-end: desde conceptualización hasta control de calidad y comercialización.",
+        "color": "#5B4FD9"
+      },
+      "status": "real-content",
+      "source": "foozgeneration.com — gama I+D+i"
+    },
+    {
+      "id": "ec-proceso-steps",
+      "component": "section-proceso",
+      "selector": ".proceso__steps",
+      "type": "list",
+      "value": [
+        {"num": "01", "title": "Conceptualización y formalización"},
+        {"num": "02", "title": "Ingeniería de producto"},
+        {"num": "03", "title": "Viabilidad económica y producción"},
+        {"num": "04", "title": "Control de calidad y comercial"}
+      ],
+      "status": "real-content",
+      "source": "foozgeneration.com — sección 'De principio a fin'"
+    },
+    {
+      "id": "ec-proyectos-sostalpack",
+      "component": "section-strip-proyectos",
+      "type": "structured",
+      "value": {
+        "title": "SOSTALPACK",
+        "type": "Proyecto I+D",
+        "description": "Investigación para envasados sostenibles y tecnologías de procesado eficientes. CDTI / NextGenerationEU.",
+        "period": "09/09/2024 – 31/12/2025",
+        "expediente": "MIG-20241158",
+        "url": "https://www.foozgeneration.com/proyectos/"
+      },
+      "status": "real-content",
+      "source": "foozgeneration.com/proyectos/"
+    },
+    {
+      "id": "ec-contacto-email",
+      "component": "section-contacto",
+      "selector": "a[href='mailto:info@foozgeneration.com']",
+      "type": "url",
+      "value": "info@foozgeneration.com",
+      "status": "real-content"
+    },
+    {
+      "id": "ec-linkedin-url",
+      "component": "multiple",
+      "selector": "a[href*='linkedin.com/company/foozgeneration']",
+      "type": "url",
+      "value": "https://www.linkedin.com/company/foozgeneration",
+      "status": "real-content",
+      "source": "foozgeneration.com"
+    },
+    {
+      "id": "ec-footer-tagline",
+      "component": "section-footer",
+      "selector": ".footer__tagline",
+      "type": "text",
+      "value": "Alimentos innovadores y ecológicos que conectan con las personas.",
+      "status": "real-content-adapted"
+    },
+    {
+      "id": "ec-footer-copyright",
+      "component": "section-footer",
+      "selector": ".footer__copy",
+      "type": "text",
+      "value": "© 2026 FooZgeneration. Todos los derechos reservados.",
+      "status": "real-content",
+      "source": "foozgeneration.com — footer"
+    },
+    {
+      "id": "ec-form-gama-options",
+      "component": "section-contacto",
+      "selector": "#form-gama",
+      "type": "select-options",
+      "value": ["Gama Senior", "Gama Sport", "Gama Baby", "Gama I+D+i", "Proyecto personalizado", "Otro / Aún no lo sé"],
+      "status": "real-content"
+    }
+  ],
+
+  "fixedContent": [
+    {
+      "id": "fc-hero-svg",
+      "description": "Formas SVG generativas del hero. Aprobadas para dirección creativa. SVG inline.",
+      "note": "Para WordPress: incrustar como SVG en plantilla o campo HTML del tema."
+    },
+    {
+      "id": "fc-gama-svgs",
+      "description": "SVGs visuales de cada gama con geometría semántica: Senior (círculos orgánicos), Sport (formas dinámicas angulares), Baby (elipses suaves), I+D+i (red molecular).",
+      "note": "Para WordPress: 1 SVG por gama. Incrustar en CPT 'gama' o shortcode."
+    }
+  ],
+
+  "forms": [
+    {
+      "id": "form-contacto",
+      "selector": "#contacto-form",
+      "method": "placeholder",
+      "fields": [
+        {"name": "nombre", "type": "text", "required": true, "label": "Nombre"},
+        {"name": "email", "type": "email", "required": true, "label": "Email"},
+        {"name": "empresa", "type": "text", "required": false, "label": "Empresa u organización"},
+        {
+          "name": "gama",
+          "type": "select",
+          "required": false,
+          "label": "¿En qué gama estás interesado?",
+          "options": ["Senior", "Sport", "Baby", "I+D+i", "Proyecto personalizado", "Otro"]
+        },
+        {"name": "mensaje", "type": "textarea", "required": false, "label": "Cuéntanos tu proyecto"}
+      ],
+      "submitBehavior": "visual-only",
+      "note": "PENDING: definir integración backend — ¿email directo a info@foozgeneration.com, CRM, o plugin WordPress?"
+    }
+  ],
+
+  "jsInteractions": [
+    {
+      "id": "js-nav-scroll",
+      "file": "js/main.js",
+      "trigger": "window scroll",
+      "behavior": "Nav cambia de transparent a dark al pasar 48px",
+      "wordpressNote": "Mantener JS as-is."
+    },
+    {
+      "id": "js-fade-in",
+      "file": "js/main.js",
+      "trigger": "IntersectionObserver on .fade-in",
+      "behavior": "Elementos entran con fade + translateY al aparecer en viewport",
+      "wordpressNote": "Asegurar clases fade-in en bloques Gutenberg."
+    },
+    {
+      "id": "js-gama-hover",
+      "file": "js/main.js",
+      "trigger": "mouseenter/mouseleave/focusin/focusout on .gama",
+      "behavior": "CSS transitions de color + aria-expanded para accesibilidad",
+      "wordpressNote": "CSS gestiona visual. JS solo aria."
+    },
+    {
+      "id": "js-form-focus",
+      "file": "js/main.js",
+      "trigger": "focus/blur on form fields",
+      "behavior": "Añade .is-focused y .has-value al .form__group padre",
+      "wordpressNote": "Depende del plugin de formularios elegido."
+    }
+  ],
+
+  "assets": [
+    {
+      "id": "asset-fonts",
+      "type": "external-cdn",
+      "source": "Google Fonts",
+      "files": ["Space Grotesk (400, 500, 600, 700)", "Inter (400, 500, 600)"],
+      "note": "Para WordPress: auto-hospedar con OMGF o descarga manual para GDPR."
+    },
+    {
+      "id": "asset-svgs-inline",
+      "type": "inline-svg",
+      "location": "index.html — hero__bg + 4x .gama__visual",
+      "note": "Todos inline. Sin dependencias externas."
+    },
+    {
+      "id": "asset-logo-transparent",
+      "type": "local",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/03/cropped-LOGO-FOOZ-GENERATION-130x53.png",
+      "localPath": "assets/logos/logo-fooz-generation-transparent.png",
+      "status": "DOWNLOADED",
+      "usage": "nav (filtro CSS blanco), footer (filtro CSS blanco)",
+      "note": "PNG con fondo transparente. Colores reales visibles: FOOZ azul + figura magenta. filter:brightness(0)invert(1) en contextos oscuros (nav, footer). Es el logo preferido sobre el JPG.",
+      "alt": "FooZ Generation",
+      "dimensions": "130x53px"
+    },
+    {
+      "id": "asset-logo-jpg",
+      "type": "local",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/03/LOGO-FOOZ-GENERATION-300x124.jpg",
+      "localPath": "assets/logos/logo-fooz-generation-white-bg.jpg",
+      "status": "DOWNLOADED",
+      "usage": "obsoleto — reemplazado por asset-logo-transparent en nav y footer",
+      "note": "Logo JPG con fondo blanco. Conservado como respaldo.",
+      "alt": "FooZ Generation",
+      "dimensions": "300x124px"
+    },
+    {
+      "id": "asset-product-factory",
+      "type": "local",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/ProductoFabrica.png",
+      "localPath": "assets/images/producto-fabrica.png",
+      "status": "DOWNLOADED",
+      "usage": "about section — columna visual derecha",
+      "note": "Línea de producción industrial: sopas/purés dorados en envases blancos. Ambiente clínico profesional. Muy representativo de la capacidad productiva real de FooZ.",
+      "alt": "Línea de producción FooZ Generation: envases con producto alimentario ecológico",
+      "dimensions": "~800x600px"
+    },
+    {
+      "id": "asset-icono-conceptualizacion-original",
+      "type": "local-png",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/icono_cerebro.png",
+      "localPath": "assets/icons/icono-cerebro-original.png",
+      "status": "DOWNLOADED",
+      "usage": "proceso section — paso 01",
+      "note": "PNG original del site real. Cerebro con trazo blanco sobre fondo transparente. Creado en Figma. 11.5KB. Integrado en index.html paso 01 en v0.4.",
+      "dimensions": "~80x80px"
+    },
+    {
+      "id": "asset-icono-conceptualizacion-svg",
+      "type": "local-svg",
+      "localPath": "assets/icono-proceso-conceptualizacion.svg",
+      "status": "SUPERSEDED",
+      "usage": "obsoleto — reemplazado por asset-icono-conceptualizacion-original en paso 01",
+      "note": "SVG creado localmente en v0.3. Sustituido por el PNG real del cliente en v0.4."
+    },
+    {
+      "id": "asset-icono-ingenieria",
+      "type": "local-svg",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/IconoRuedaSetting.svg",
+      "localPath": "assets/icono-proceso-ingenieria.svg",
+      "status": "RECREATED-FROM-SOURCE",
+      "usage": "proceso section — paso 02",
+      "note": "SVG del site real recreado localmente. Código fuente idéntico al original."
+    },
+    {
+      "id": "asset-icono-viabilidad",
+      "type": "local-svg",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/IconoEuro.svg",
+      "localPath": "assets/icono-proceso-viabilidad.svg",
+      "status": "RECREATED-FROM-SOURCE",
+      "usage": "proceso section — paso 03",
+      "note": "SVG del site real recreado localmente. Código fuente idéntico al original."
+    },
+    {
+      "id": "asset-icono-calidad",
+      "type": "local-svg",
+      "sourceUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/IconoCheck.svg",
+      "localPath": "assets/icono-proceso-calidad.svg",
+      "status": "RECREATED-FROM-SOURCE",
+      "usage": "proceso section — paso 04",
+      "note": "SVG del site real recreado localmente. Código fuente idéntico al original."
+    },
+    {
+      "id": "asset-gama-senior",
+      "type": "local",
+      "placeholder": false,
+      "originalUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/SENIOR_Opacidad.png",
+      "localPath": "assets/gamas/senior-opacidad.png",
+      "status": "DOWNLOADED",
+      "usedIn": "section-gamas — gama--01 (Gama Senior)",
+      "altText": "Productos de la Gama Senior FooZ Generation — alimentación de alta calidad para personas mayores",
+      "note": "PNG con canal alfa (opacidad incorporada). Se superpone sobre fondo SVG geométrico naranja-tierra (--gama-01-bg). object-fit:contain, 88% del área visual.",
+      "fileSize": "260KB"
+    },
+    {
+      "id": "asset-gama-sport",
+      "type": "local",
+      "placeholder": false,
+      "originalUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/SPORT_Opacidad.png",
+      "localPath": "assets/gamas/sport-opacidad.png",
+      "status": "DOWNLOADED",
+      "usedIn": "section-gamas — gama--02 (Gama Sport)",
+      "altText": "Productos de la Gama Sport FooZ Generation — alimentación deportiva ecológica basada en comida real",
+      "note": "PNG con canal alfa. Superpuesto sobre fondo SVG geométrico verde (--gama-02-bg). Layout inverso (.split--reverse).",
+      "fileSize": "228KB"
+    },
+    {
+      "id": "asset-gama-baby",
+      "type": "local",
+      "placeholder": false,
+      "originalUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/BABY_Opacidad.png",
+      "localPath": "assets/gamas/baby-opacidad.png",
+      "status": "DOWNLOADED",
+      "usedIn": "section-gamas — gama--03 (Gama Baby)",
+      "altText": "Productos de la Gama Baby FooZ Generation — alimentación infantil ecológica de kilómetro cero",
+      "note": "PNG con canal alfa. Superpuesto sobre fondo SVG geométrico magenta (--gama-03-bg = brand pink tint).",
+      "fileSize": "243KB"
+    },
+    {
+      "id": "asset-gama-idi",
+      "type": "local",
+      "placeholder": false,
+      "originalUrl": "https://foozgeneration.com/wp-content/uploads/2026/04/IDI_Opacidad.png",
+      "localPath": "assets/gamas/idi-opacidad.png",
+      "status": "DOWNLOADED",
+      "usedIn": "section-gamas — gama--04 (Gama I+D+i)",
+      "altText": "Proyectos de la Gama I+D+i FooZ Generation — investigación, desarrollo e innovación alimentaria",
+      "note": "PNG con canal alfa. Superpuesto sobre fondo SVG red molecular azul (--gama-04-bg = brand blue tint). Layout inverso (.split--reverse).",
+      "fileSize": "291KB"
+    }
+  ],
+
+  "externalDependencies": [
+    {
+      "id": "dep-google-fonts",
+      "name": "Google Fonts",
+      "type": "cdn",
+      "required": true,
+      "wordpressNote": "Reemplazar por auto-hospedaje en producción."
+    }
+  ],
+
+  "designTokens": {
+    "file": "css/tokens.css",
+    "colors": {
+      "bg-dark": "#0D1117",
+      "bg-light": "#F8F7F4",
+      "bg-mid": "#EFECE6",
+      "text-primary": "#0D1117",
+      "text-secondary": "#5A5A5A",
+      "accent": "#E84E2A",
+      "gama-senior": "#D4614A",
+      "gama-sport": "#2EAF74",
+      "gama-baby": "#E8960A",
+      "gama-idi": "#5B4FD9"
+    },
+    "typography": {
+      "display": "Space Grotesk",
+      "body": "Inter"
+    },
+    "brandColorsSource": "Logo real de foozgeneration.com analizado visualmente. Azul royal ~#0033A0 + Magenta ~#E8187C.",
+    "colorNote": "Los colores de la paleta de gamas (Senior terracota, Sport verde, Baby magenta, I+D+i brand-blue) son propuesta. Sin manual de identidad con hexadecimales exactos confirmados por el cliente."
+  },
+
+  "breakpoints": [
+    {"name": "mobile", "max": "480px"},
+    {"name": "tablet", "max": "768px"},
+    {"name": "laptop", "max": "1024px"},
+    {"name": "desktop", "min": "1025px"}
+  ],
+
+  "visualStates": [
+    {"id": "state-nav-transparent", "component": "section-nav", "description": "Nav en hero, fondo transparente"},
+    {"id": "state-nav-scrolled", "component": "section-nav", "description": "Nav tras scroll, fondo oscuro"},
+    {"id": "state-gama-hover", "component": "section-gamas", "description": "Gama con hover: número, h3 y cta toman color de la gama"},
+    {"id": "state-form-focus", "component": "section-contacto", "description": "Campo activo: borde accent + glow suave"},
+    {"id": "state-form-sent", "component": "section-contacto", "description": "Submit: botón verde confirmación 2.8s"},
+    {"id": "state-fade-in", "description": "Fade + translateY al hacer scroll en .fade-in elements"}
+  ],
+
+  "wordpressRecommendations": [
+    {
+      "id": "wp-rec-theme",
+      "recommendation": "Tema hijo o FSE con control total de header/footer. El layout editorial alternante de gamas requiere templates flexibles.",
+      "priority": "high"
+    },
+    {
+      "id": "wp-rec-gamas-cpt",
+      "recommendation": "CPT 'gama' con ACF: nombre, descripción, color (hex), SVG inline, número de orden. Las 4 gamas son el corazón del sitio.",
+      "priority": "high"
+    },
+    {
+      "id": "wp-rec-proyectos-cpt",
+      "recommendation": "CPT 'proyecto' para SOSTALPACK y futuros proyectos I+D. Ya existe la página /proyectos/ en el site actual.",
+      "priority": "medium"
+    },
+    {
+      "id": "wp-rec-forms",
+      "recommendation": "PENDING: definir plugin de formularios. Se recomienda WPForms o Fluent Forms con integración a info@foozgeneration.com y posible CRM.",
+      "priority": "blocking"
+    },
+    {
+      "id": "wp-rec-fonts",
+      "recommendation": "Auto-hospedar Space Grotesk e Inter. GDPR compliance.",
+      "priority": "medium"
+    },
+    {
+      "id": "wp-rec-tokens",
+      "recommendation": "Convertir tokens.css a theme.json de WordPress para compatibilidad Gutenberg.",
+      "priority": "medium"
+    }
+  ],
+
+  "risks": [
+    {
+      "id": "risk-color-identity",
+      "description": "Los colores de gama (SENIOR terracota, SPORT verde, BABY ámbar, I+D+i índigo) son una propuesta. Si el cliente tiene manual de identidad o colores corporativos definidos, actualizar tokens.",
+      "severity": "warning",
+      "blocksWordPress": false
+    },
+    {
+      "id": "risk-form-backend",
+      "description": "El formulario de contacto no tiene backend. Requiere decisión de herramienta antes de conversión WordPress.",
+      "severity": "blocking",
+      "blocksWordPress": true
+    },
+    {
+      "id": "risk-logo-image",
+      "description": "El logo actual en prototipo es tipográfico. La web real usa imagen PNG/JPG. Confirmar si se mantiene enfoque tipográfico o se integra imagen de logo.",
+      "severity": "warning",
+      "blocksWordPress": false
+    },
+    {
+      "id": "risk-product-images",
+      "description": "El prototipo no usa imágenes de producto. La web real tiene al menos ProductoFabrica.png. En iteraciones futuras se pueden integrar en las secciones de gamas.",
+      "severity": "warning",
+      "blocksWordPress": false
+    },
+    {
+      "id": "risk-copy-final",
+      "description": "Las descripciones ampliadas de cada gama (headlines y párrafos) son adaptaciones editoriales del copy actual. Revisar con cliente antes de publicar.",
+      "severity": "warning",
+      "blocksWordPress": false
+    }
+  ],
+
+  "pendingDecisions": [
+    {
+      "id": "pd-form-backend",
+      "question": "¿El formulario de contacto envía email a info@foozgeneration.com, conecta con CRM, o usa otra integración?",
+      "responsible": "cliente",
+      "impact": "Bloquea elección de plugin de formularios en WordPress",
+      "status": "blocking",
+      "nextAction": "Definir antes de arquitectura WordPress"
+    },
+    {
+      "id": "pd-color-identity",
+      "question": "¿Existe manual de identidad visual con colores corporativos definidos?",
+      "responsible": "cliente",
+      "impact": "Actualizar tokens de color de gamas si existe identidad definida",
+      "status": "warning",
+      "nextAction": "Solicitar en la revisión del prototipo"
+    },
+    {
+      "id": "pd-inner-pages",
+      "question": "¿Hay páginas internas por gama o solo la sección en home? La web actual tiene /proyectos/ — ¿se desarrollan más páginas internas?",
+      "responsible": "cliente",
+      "impact": "Afecta navegación y arquitectura WordPress",
+      "status": "warning",
+      "nextAction": "Preguntar en la revisión del prototipo"
+    },
+    {
+      "id": "pd-gama-descriptions-final",
+      "question": "¿El copy de headlines y descripciones de cada gama es fiel a cómo FooZ quiere comunicarlas?",
+      "responsible": "cliente",
+      "impact": "Todo el copy es adaptación editorial, no texto literal aprobado por el cliente",
+      "status": "warning",
+      "nextAction": "Revisar con cliente en la presentación del prototipo"
+    }
+  ],
+
+  "resolvedDecisions": [
+    {
+      "id": "resolved-business-type",
+      "question": "¿FooZ Generation es consultora B2B o empresa de producto alimentario?",
+      "resolution": "Empresa foodtech que desarrolla alimentos innovadores y ecológicos. NO es consultora. Gamas: SENIOR, SPORT, BABY, I+D+i.",
+      "source": "foozgeneration.com",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-gamas-names",
+      "question": "¿Cuáles son los nombres reales de las gamas?",
+      "resolution": "SENIOR, SPORT, BABY, I+D+i — confirmados en la web actual.",
+      "source": "foozgeneration.com",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-linkedin",
+      "question": "¿Cuál es la URL de LinkedIn?",
+      "resolution": "https://www.linkedin.com/company/foozgeneration",
+      "source": "foozgeneration.com",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-email",
+      "question": "¿Cuál es el email de contacto?",
+      "resolution": "info@foozgeneration.com",
+      "source": "foozgeneration.com",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-stats",
+      "question": "¿Cuáles son las cifras reales?",
+      "resolution": "7+ años de I+D, 25+ formulaciones ecológicas, 4 gamas, certificación ENISA.",
+      "source": "foozgeneration.com",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-process",
+      "question": "¿Cuáles son los pasos reales del proceso?",
+      "resolution": "Conceptualización y formalización → Ingeniería de producto → Viabilidad económica y producción → Control de calidad y comercial.",
+      "source": "foozgeneration.com — sección De principio a fin",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-proyectos",
+      "question": "¿Hay proyectos I+D documentados?",
+      "resolution": "Sí: SOSTALPACK (CDTI/NextGenerationEU, 2024-2025) + Certificación ENISA. Página /proyectos/ activa.",
+      "source": "foozgeneration.com/proyectos/",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-logo-treatment",
+      "question": "¿Usar logo como imagen (PNG/SVG) o mantener enfoque tipográfico en el prototipo?",
+      "resolution": "Logo imagen PNG con fondo transparente integrado en nav y footer. Filtro CSS brightness(0)invert(1) para contextos oscuros. Logo PNG transparente (130x53) descargado del site real.",
+      "source": "foozgeneration.com — cropped-LOGO-FOOZ-GENERATION-130x53.png",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-product-images-gamas",
+      "question": "¿Se integran fotografías de producto en las secciones de gamas o se mantiene el enfoque generativo-SVG?",
+      "resolution": "Ambos. Las imágenes reales (_Opacidad.png) se superponen sobre los fondos SVG generativos. El SVG reduce a 50% de opacidad con :has(). Las imágenes flotan con object-fit:contain y drop-shadow.",
+      "source": "foozgeneration.com — SENIOR_Opacidad.png, SPORT_Opacidad.png, BABY_Opacidad.png, IDI_Opacidad.png",
+      "resolvedAt": "2026-06-05"
+    },
+    {
+      "id": "resolved-css-background-images",
+      "question": "¿El site usa imágenes en CSS (background-image, mask-image, url() en stylesheets)?",
+      "resolution": "No. Investigación completa sobre Astra v4.13, WordPress block-library CSS, Elementor CSS. El site usa exclusivamente fondos de color sólido y SVG inline en CSS. No hay imágenes externas referenciadas en hojas de estilo.",
+      "source": "wp-content/themes/astra/style.css, wp-includes/css/dist/block-library/style.min.css",
+      "resolvedAt": "2026-06-05"
+    }
+  ],
+
+  "conversionReadiness": {
+    "readyForWordPress": false,
+    "blockingIssues": ["pd-form-backend"],
+    "warningIssues": ["pd-color-identity", "pd-logo-treatment", "pd-inner-pages", "pd-gama-descriptions-final"],
+    "optionalIssues": [],
+    "completedItems": [
+      "HTML semántico con IDs estables",
+      "CSS modular con design tokens",
+      "Responsive básico (mobile, tablet, desktop)",
+      "Accesibilidad básica (focus-visible, aria-labels, roles, sr-only)",
+      "JS desacoplado por comportamiento",
+      "Sin imágenes externas — SVG inline únicamente",
+      "Contenido real incorporado: gamas, proceso, cifras, email, LinkedIn, proyectos",
+      "7 decisiones críticas de v0.1 resueltas con análisis de la web actual",
+      "Assets reorganizados en subcarpetas: logos/, icons/, images/",
+      "Logo PNG transparente integrado en nav y footer (reemplaza JPG)",
+      "Icono cerebro real del site integrado en proceso paso 01",
+      "Investigación CSS completada: no hay background-image con imágenes externas en el site",
+      "Imágenes reales de producto integradas en las 4 gamas (Senior, Sport, Baby, I+D+i)"
+    ],
+    "nextStep": "Presentar prototipo al cliente. Única decisión bloqueante antes de arquitectura WordPress: integración del formulario de contacto."
+  },
+
+  "iteration": {
+    "version": "0.5.0",
+    "date": "2026-06-05",
+    "validatedByClient": false,
+    "changes": [
+      {
+        "version": "0.1.0",
+        "date": "2026-06-05",
+        "description": "Prototipo inicial. Contenido placeholder. Dirección creativa aprobada: hero oscuro, cuerpo editorial claro, layout alternante de gamas."
+      },
+      {
+        "version": "0.2.0",
+        "date": "2026-06-05",
+        "description": "Contenido real incorporado desde foozgeneration.com. FooZ Generation identificada como empresa foodtech. Gamas reales: SENIOR, SPORT, BABY, I+D+i. Proceso real 4 fases. Email y LinkedIn reales. Sección de proyectos (SOSTALPACK + ENISA).",
+        "scope": ["index.html", "css/tokens.css", "prototype-manifest.json"]
+      },
+      {
+        "version": "0.3.0",
+        "date": "2026-06-05",
+        "description": "Identidad visual real aplicada. Logo real descargado e integrado (filtro CSS blanco para contextos oscuros). Foto ProductoFabrica.png descargada y usada en sección About. 4 iconos del proceso reales (SVGs del site recreados localmente). Paleta: azul royal #001B6A + magenta #E8187C extraídos del logo real. Gama I+D+i usa brand-blue, Gama Baby usa brand-pink. Barra de credenciales en hero. Proceso sobre fondo azul marca con hover en cards. Sección proyectos sobre azul profundo. Contacto sobre fondo azul tintado. Base.css: headings azul profundo en light, blanco en dark.",
+        "scope": ["index.html", "css/tokens.css", "css/base.css", "css/components.css", "css/pages.css", "assets/", "prototype-manifest.json"]
+      },
+      {
+        "version": "0.4.0",
+        "date": "2026-06-05",
+        "description": "Investigación CSS completa del site real (Astra v4.13, Elementor) — confirmado que no hay background-image con imágenes externas en CSS. Assets reorganizados en subcarpetas: logos/, icons/, images/. Logo PNG transparente (130x53, fondo transparente, colores reales) descargado e integrado en nav y footer. Icono cerebro PNG original del site descargado e integrado en proceso paso 01. Rutas de assets actualizadas en index.html.",
+        "scope": ["index.html", "assets/logos/", "assets/icons/", "assets/images/", "prototype-manifest.json"]
+      },
+      {
+        "version": "0.5.0",
+        "date": "2026-06-05",
+        "description": "Imágenes reales de producto integradas en las 4 gamas. PNGs con canal alfa (_Opacidad.png) descargados del site real y superpuestos sobre el fondo SVG geométrico de cada gama. Efecto: imagen flota sobre fondo tintado con formas generativas al 50% de opacidad. Hover: scale + translateY + drop-shadow intensificado. CSS: .gama__img con object-fit:contain, :has() para reducir opacidad del SVG. Accesibilidad: aria-hidden movido al SVG, alt text descriptivo en imágenes.",
+        "scope": ["index.html", "css/components.css", "assets/gamas/", "prototype-manifest.json"]
+      }
+    ]
+  },
+
+  "referenceAnalysis": {
+    "sources": [
+      {
+        "id": "ref-current",
+        "url": "https://foozgeneration.com",
+        "description": "Web actual del cliente. Fuente principal de contenido real para v0.2.",
+        "analysisDate": "2026-06-05"
+      },
+      {
+        "id": "ref-proyectos",
+        "url": "https://foozgeneration.com/proyectos/",
+        "description": "Página de proyectos. Fuente de información sobre SOSTALPACK y certificación ENISA.",
+        "analysisDate": "2026-06-05"
+      },
+      {
+        "id": "ref-formo",
+        "url": "https://formo.bio",
+        "description": "Referencia de inspiración: editorial limpia, tipografía como protagonista."
+      },
+      {
+        "id": "ref-ideo",
+        "url": "https://ideo.com",
+        "description": "Referencia de inspiración: consultora de diseño e innovación."
+      },
+      {
+        "id": "ref-frog",
+        "url": "https://frog.co",
+        "description": "Referencia de inspiración: tipografía bold, secciones de alto contraste."
+      },
+      {
+        "id": "ref-akqa",
+        "url": "https://akqa.com",
+        "description": "Referencia de inspiración: dark mode, movimiento sobrio."
+      },
+      {
+        "id": "ref-sypartners",
+        "url": "https://sypartners.com",
+        "description": "Referencia de inspiración: editorial, espaciado generoso."
+      }
+    ],
+    "commonPatterns": [
+      "Hero de alto impacto: full-height, tipografía display, contraste fuerte",
+      "Tipografía como elemento visual principal",
+      "Espaciado generoso",
+      "Capacidades/productos como áreas de trabajo, no lista de iconos",
+      "Proceso simplificado (3-5 pasos)",
+      "Contacto integrado en la home",
+      "Copy directo con voz propia"
+    ],
+    "visualDirection": "Hero oscuro de alto contraste + cuerpo editorial claro. Tipografía display bold como elemento gráfico. Formas SVG generativas en lugar de fotografía de producto. Sistema de color con un acento por gama.",
+    "contentPatterns": [
+      "Propuesta de valor directa en hero",
+      "Audiencias específicas como punto diferencial (SENIOR, SPORT, BABY)",
+      "I+D+i como credencial de experiencia (7+ años, 25+ formulaciones)",
+      "ESG y km0 como valores transversales",
+      "Proyectos I+D como prueba de innovación"
+    ],
+    "interactionPatterns": [
+      "Scroll behaviors suaves — nav scroll, fade-in de secciones",
+      "Hover states con intención comunicativa en gamas",
+      "Sin animaciones distractoras — movimiento sobrio",
+      "Sin cursor custom (decidido en v0.1)"
+    ],
+    "assumptions": [
+      {
+        "id": "assumption-color-gamas",
+        "description": "Los colores de gama son propuesta del equipo de diseño: SENIOR terracota, SPORT verde, BABY ámbar, I+D+i índigo. No confirmados por el cliente.",
+        "origin": "decision-de-diseno",
+        "impact": "Revisar con cliente si tiene identidad cromática preexistente.",
+        "requiresClientConfirmation": true
+      },
+      {
+        "id": "assumption-copy-gamas",
+        "description": "Las descripciones ampliadas de gamas (headlines y párrafos) son adaptaciones editoriales del copy existente. El cliente puede querer ajustarlas.",
+        "origin": "adaptacion-editorial",
+        "impact": "Cambios de copy menores, no estructurales.",
+        "requiresClientConfirmation": true
+      },
+      {
+        "id": "assumption-single-page",
+        "description": "El prototipo v0.2 es una home single-page. Se incluye link a /proyectos/ del site real. No se sabe si habrá páginas internas por gama.",
+        "origin": "decision-de-alcance-v01",
+        "impact": "Si hay páginas internas, la arquitectura WordPress requiere plantillas adicionales.",
+        "requiresClientConfirmation": true
+      }
+    ],
+    "doNotCopyNotes": [
+      "No copiar la estructura visual actual de foozgeneration.com — la nueva dirección es deliberadamente diferente y superior.",
+      "No copiar el cursor personalizado de referencias externas. Sin cursor custom en v1.",
+      "No copiar animaciones de loading. El prototipo prioriza rendimiento y accesibilidad."
+    ]
+  }
+}
